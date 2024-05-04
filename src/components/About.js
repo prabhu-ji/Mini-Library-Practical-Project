@@ -1,12 +1,12 @@
 import React from 'react';
 
-function About() {
+function Blog() {
   return (
     <div>
-      <h2>About the Library System</h2>
-      <p>This library system is designed to manage books efficiently. It allows users to add new books to the system, view a list of added books, and explore various functionalities.</p>
+      <h2>Library System Blog</h2>
+      <p>Stay tuned for updates, tips, and tricks related to the library system. We'll be sharing useful information to enhance your experience with the system.</p>
     </div>
   );
 }
 
-export default About;
+export default Blog;
