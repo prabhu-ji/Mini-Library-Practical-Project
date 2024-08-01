@@ -10,7 +10,7 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "react-icons": "^4.7.1"  // Add this if you haven't already installed react-icons
+    "react-icons": "^4.7.1" 
   },
   "scripts": {
     "start": "react-scripts start",
