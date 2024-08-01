@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faFilter } from '@fortawesome/free-solid-svg-icons';
+import SearchIcon from '@mui/icons-material/Search';
+import FilterListIcon from '@mui/icons-material/FilterList';
 
 function BookList({ books, handleIssue, handleReturn, handleDelete, handleFilterChange }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -56,7 +56,7 @@ function BookList({ books, handleIssue, handleReturn, handleDelete, handleFilter
   return (
     <div className="booklist-container">
       <div className="search-bar">
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+        <SearchIcon className="search-icon" />
         <input
           type="text"
           value={searchQuery}
@@ -64,8 +64,7 @@ function BookList({ books, handleIssue, handleReturn, handleDelete, handleFilter
           placeholder="Search books..."
           className="search-input"
         />
-        <FontAwesomeIcon
-          icon={faFilter}
+        <FilterListIcon
           className="filter-icon"
           onClick={() => setShowFilter(!showFilter)}
         />
