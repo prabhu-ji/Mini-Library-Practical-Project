@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import SearchIcon from '@mui/icons-material/Search';
-import FilterListIcon from '@mui/icons-material/FilterList';
+import { FaSearch, FaFilter } from 'react-icons/fa'; // Import icons from react-icons
 
-function BookList({ books, handleIssue, handleReturn, handleDelete, handleFilterChange }) {
+function BookList({ books, handleIssue, handleReturn, handleDelete }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [showDesc, setShowDesc] = useState({});
   const [showFilter, setShowFilter] = useState(false);
@@ -56,7 +55,7 @@ function BookList({ books, handleIssue, handleReturn, handleDelete, handleFilter
   return (
     <div className="booklist-container">
       <div className="search-bar">
-        <SearchIcon className="search-icon" />
+        <FaSearch className="search-icon" />
         <input
           type="text"
           value={searchQuery}
@@ -64,7 +63,7 @@ function BookList({ books, handleIssue, handleReturn, handleDelete, handleFilter
           placeholder="Search books..."
           className="search-input"
         />
-        <FilterListIcon
+        <FaFilter
           className="filter-icon"
           onClick={() => setShowFilter(!showFilter)}
         />
